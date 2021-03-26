@@ -1,8 +1,6 @@
 #include <iostream>
-#include <fstream>
 #include <list>
 #include <stack>
-#include <string>
 #include <array>
 
 #define N 9
@@ -127,37 +125,6 @@ int main() {
         {0, 9, 0, 0, 0, 0, 0, 0, 5},
         {0, 0, 0, 0, 0, 1, 6, 3, 0},
         {7, 0, 0, 0, 0, 2, 0, 0, 8}}};
-
-    // fstream sudoku_file;
-    // sudoku_file.open("sudoku.txt", ios::in);
-
-    // if (sudoku_file.is_open()) {
-    //     string line;
-    //     int line_number = 0;
-    //     int x, y;
-    //     while(getline(sudoku_file, line)){
-    //         if (line_number % 10 != 0) {
-
-    //             x = (line_number % 10) - 1;
-    //             for (int i = 0; i < line.size(); i++) {
-    //                 y = i;
-    //                 state.board[x][y] = line[i] - '0';
-    //             }
-    //             cout << endl;
-    //         } 
-
-    //         if ((line_number % 10 == 0) && line_number > 0) {
-    //             state.show();
-    //             // State final_state = DFS_solve(state);
-    //             // final_state.show();
-    //         }
-            
-    //         line_number++;
-    //     }
-    //     sudoku_file.close();
-
-    // }
-
 
     cout << "Estado inicial: " << endl;
     cout << state;
